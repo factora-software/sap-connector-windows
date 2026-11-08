@@ -1,6 +1,6 @@
 [project]
 name = "sap-connector"
-version = "0.1.0"
+version = "0.1.1"
 description = "Liest SAP-Fakturabelege (OData) und erzeugt über die Factora-API E-Rechnungen."
 requires-python = ">=3.11"
 dependencies = ["requests>=2.31"]
