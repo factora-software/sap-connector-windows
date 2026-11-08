@@ -1,0 +1,22 @@
+SAP-Connector für Factora (Linux, RHEL 8 / SLES 15 und neuer)
+
+INSTALLIEREN
+1. Archiv entpacken:   tar xzf sap-connector-linux-<Version>.tar.gz
+2. Starten:            cd sap-connector && ./sap-connector
+   Es fragt der Reihe nach:
+   - den Factora Live-Key (die Eingabe bleibt unsichtbar)
+   - den Installationspfad (dort wird alles abgelegt)
+   - SAP-Adresse und SAP-Zugang, Firmendaten, Startpunkt, Zeitplan (Cron)
+3. Fertig. Der Zeitplan startet den Connector danach von selbst.
+
+NACH DER INSTALLATION
+- Die Steuer-Tabelle für Kennzeichen mit 0 % und die Kundenanschriften stehen in
+  <Installationspfad>/config/tenant.json und werden dort vom Steuerberater ergänzt.
+- Prüfen ohne zu senden:  <Installationspfad>/program/sap-connector sync --dry-run --home <Installationspfad>
+
+HINWEISE
+- Der Live-Key liegt in <Installationspfad>/config/secrets.json, lesbar nur für den Benutzer (Rechte 0600).
+  Die Datei ist nicht verschlüsselt: den Ordner nur dem Dienstbenutzer zugänglich machen.
+- Es wird nichts gesendet, bevor ein Startpunkt (Belegnummer) festgelegt ist.
+- Prüfsumme des Archivs: siehe Datei *.sha256 neben dem Download.
+- Gebaut auf einem RHEL-8-kompatiblen System (glibc 2.28); läuft auf neueren Systemen.

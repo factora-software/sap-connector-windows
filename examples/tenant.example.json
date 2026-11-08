@@ -1,0 +1,74 @@
+{
+  "tenant_scope": "CHANGE_ME-mandant-kennung",
+  "profile": "xrechnung",
+  "seller": {
+    "name": "Beispiel Verkäufer GmbH",
+    "street": "Musterweg 1",
+    "zip": "10115",
+    "city": "Berlin",
+    "country": "DE",
+    "vat_id": "DE000000000",
+    "iban": "CHANGE_ME",
+    "contact": {
+      "name": "Beispiel Kontakt",
+      "phone": "CHANGE_ME",
+      "email": "rechnung@beispiel.invalid"
+    }
+  },
+  "tax_condition_types": [
+    "CHANGE_ME_MWST_KONDITIONSART"
+  ],
+  "tax_codes": {
+    "CHANGE_ME_A0_STEUERFREI": {
+      "category": "E",
+      "requires_zero_vat_reason": true
+    },
+    "CHANGE_ME_A9_AUSFUHR": {
+      "category": "G",
+      "supply_type": "goods"
+    },
+    "CHANGE_ME_A8_TATSACHEN": {
+      "supply_type": "goods"
+    }
+  },
+  "zero_vat_reasons": {
+    "CHANGE_ME_RSN": {
+      "exemption_reason_code": "CHANGE_ME_VATEX",
+      "exemption_reason_text": "CHANGE_ME Befreiungstext"
+    }
+  },
+  "units": {
+    "PC": "H87",
+    "HR": "HUR",
+    "KG": "KGM"
+  },
+  "document_types": {
+    "F2": "380"
+  },
+  "leitweg_text_id": "EDDE",
+  "buyer_partner_function": "BP",
+  "partner_fields": {
+    "name": "FullName",
+    "street": "StreetName",
+    "zip": "PostalCode",
+    "city": "CityName",
+    "country": "Country",
+    "email": "EmailAddress"
+  },
+  "customers": {
+    "CHANGE_ME_KUNDENNUMMER": {
+      "FullName": "CHANGE_ME",
+      "StreetName": "CHANGE_ME",
+      "PostalCode": "00000",
+      "CityName": "CHANGE_ME",
+      "Country": "DE"
+    }
+  },
+  "payment_methods": {
+    "CHANGE_ME_ZAHLWEG": "58"
+  },
+  "payment_terms": {
+    "CHANGE_ME_ZAHLBED": "CHANGE_ME Text"
+  },
+  "shipping_partner_function": ""
+}

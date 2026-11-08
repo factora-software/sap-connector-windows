@@ -1,0 +1,54 @@
+{
+  "tenant_scope": "test-mandant",
+  "profile": "xrechnung",
+  "seller": {
+    "name": "Beispiel Verkäufer GmbH",
+    "street": "Musterweg 1",
+    "zip": "10115",
+    "city": "Berlin",
+    "country": "DE",
+    "vat_id": "DE000000000",
+    "contact": {
+      "phone": "030 1234567",
+      "email": "rechnung@beispiel.invalid"
+    },
+    "iban": "DE89370400440532013000"
+  },
+  "tax_condition_types": [
+    "TESTMWST"
+  ],
+  "tax_codes": {
+    "A0": {
+      "category": "E",
+      "requires_zero_vat_reason": true
+    },
+    "A1": {
+      "category": "S"
+    },
+    "A2": {
+      "category": "S"
+    }
+  },
+  "zero_vat_reasons": {
+    "R1": {
+      "exemption_reason_code": "VATEX-TEST",
+      "exemption_reason_text": "Testbefreiung"
+    }
+  },
+  "units": {
+    "PC": "H87",
+    "HR": "HUR"
+  },
+  "document_types": {
+    "F2": "380"
+  },
+  "customers": {
+    "CHANGE_ME_RE": {
+      "FullName": "Beispiel Käufer AG",
+      "StreetName": "Teststraße 5",
+      "PostalCode": "80331",
+      "CityName": "München",
+      "Country": "DE"
+    }
+  }
+}

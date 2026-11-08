@@ -1,0 +1,23 @@
+SAP-Connector für Factora (Windows)
+
+INSTALLIEREN
+1. Dieses ZIP entpacken (zum Beispiel nach C:\Temp\sap-connector).
+2. Die Datei "sap-connector.exe" doppelklicken.
+   Windows kann beim ersten Start warnen ("Unbekannter Herausgeber" / SmartScreen).
+   Das liegt daran, dass das Programm nicht signiert ist. Auf "Weitere Informationen" klicken,
+   dann "Trotzdem ausführen".
+3. Es öffnet sich ein Fenster und fragt der Reihe nach:
+   - den Factora Live-Key (die Eingabe bleibt unsichtbar)
+   - den Installationspfad (dort wird alles abgelegt)
+   - SAP-Adresse und SAP-Zugang, Firmendaten, Startpunkt, Zeitplan
+4. Fertig. Der Zeitplan startet den Connector danach von selbst.
+
+NACH DER INSTALLATION
+- Die Steuer-Tabelle für Kennzeichen mit 0 % und die Kundenanschriften stehen in
+  <Installationspfad>\config\tenant.json und werden dort vom Steuerberater ergänzt.
+- Prüfen ohne zu senden:  <Installationspfad>\program\sap-connector.exe sync --dry-run --home <Installationspfad>
+
+HINWEISE
+- Der Live-Key wird im Windows-Tresor des Benutzers gespeichert, nicht in einer Datei.
+- Es wird nichts gesendet, bevor ein Startpunkt (Belegnummer) festgelegt ist.
+- Prüfsumme der ZIP-Datei: siehe Datei *.sha256 neben dem Download.

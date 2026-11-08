@@ -1,0 +1,86 @@
+{
+  "d": {
+    "BillingDocument": "90000001",
+    "BillingDocumentType": "F2",
+    "BillingDocumentDate": "/Date(1793318400000)/",
+    "TransactionCurrency": "EUR",
+    "TotalNetAmount": "1100.00",
+    "TaxAmount": "197.00",
+    "TotalGrossAmount": "1297.00",
+    "VATRegistration": "DE111111125",
+    "VATRegistrationCountry": "DE",
+    "PurchaseOrderByCustomer": "BEST-4711",
+    "PaymentReference": "RE90000001",
+    "SoldToParty": "CHANGE_ME",
+    "to_Text": {
+      "results": [
+        {
+          "LongTextID": "EDDE",
+          "Language": "DE",
+          "LongText": "04011000-12345-67"
+        },
+        {
+          "LongTextID": "0001",
+          "Language": "DE",
+          "LongText": "Freitext, nicht relevant"
+        }
+      ]
+    },
+    "to_Partner": {
+      "results": [
+        {
+          "PartnerFunction": "SP",
+          "Customer": "CHANGE_ME_AG"
+        },
+        {
+          "PartnerFunction": "BP",
+          "Customer": "CHANGE_ME_RE"
+        }
+      ]
+    },
+    "to_Item": {
+      "results": [
+        {
+          "BillingDocumentItem": "10",
+          "BillingDocumentItemText": "Beratungsleistung",
+          "BillingQuantity": "10",
+          "BillingQuantityUnit": "HR",
+          "NetAmount": "1000.00",
+          "Material": "BER-001",
+          "to_PricingElement": {
+            "results": [
+              {
+                "ConditionType": "PR00",
+                "ConditionAmount": "1000.00"
+              },
+              {
+                "ConditionType": "TESTMWST",
+                "TaxCode": "A1",
+                "ConditionRateValue": "19.000",
+                "ConditionAmount": "190.00"
+              }
+            ]
+          }
+        },
+        {
+          "BillingDocumentItem": "20",
+          "BillingDocumentItemText": "Dreierpack Fachbuch",
+          "BillingQuantity": "3",
+          "BillingQuantityUnit": "PC",
+          "NetAmount": "100.00",
+          "InternationalArticleNumber": "4006381333931",
+          "to_PricingElement": {
+            "results": [
+              {
+                "ConditionType": "TESTMWST",
+                "TaxCode": "A2",
+                "ConditionRateValue": "7.000",
+                "ConditionAmount": "7.00"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
