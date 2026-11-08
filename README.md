@@ -236,3 +236,7 @@ python -m sap_connector --file examples/factora_run/beleg.json --config examples
 In der Sandbox ist `xml_base64` immer `null` und das PDF eine entwertete Vorschau
 (`docs/reference/sandbox.md`); der Lauf prüft also Annahme und KoSIT-Urteil, nicht die XML-Datei.
 Die Beispieldaten sind erfunden (Fixture-Beleg, Test-IBAN aus der öffentlichen Beispielliste).
+
+## Lizenz
+
+MIT, siehe [LICENSE](LICENSE).
